@@ -1,2 +1,5 @@
 node_modules
 _includes/dist
+_site
+.jekyll-cache
+.vendor

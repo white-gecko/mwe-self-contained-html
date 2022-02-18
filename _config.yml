@@ -2,3 +2,5 @@ exclude:
     - src
     - "*.json"
     - "*.js"
+    - Makefile
+    - README.md

@@ -4,7 +4,7 @@ This example shows how to produce a self contained html file with [webpack](http
 
 To run this example you need node js and ruby with bundler.
 
-```
+```bash
 $ make install
 $ make build
 ```
@@ -14,7 +14,7 @@ Setting the `mode` in `webpack.config.js` to `development` results in a not mini
 It is also possible to include everything just in JavaScript without producing a CSS section.
 This can be achieved by changing the `rules` section to :
 
-```text/javascript
+```javascript
 rules: [
   {
     test: /\.s[ac]ss$/i,

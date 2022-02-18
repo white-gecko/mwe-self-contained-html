@@ -1,18 +1,21 @@
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 module.exports = {
   mode: 'development',
+  plugins: [new MiniCssExtractPlugin()],
   module: {
     rules: [
       {
         test: /\.s[ac]ss$/i,
         use: [
-          // Creates `style` nodes from JS strings
-          "style-loader",
+          // https://webpack.js.org/plugins/mini-css-extract-plugin/
+          MiniCssExtractPlugin.loader,
           // Translates CSS into CommonJS
           "css-loader",
           // Compiles Sass to CSS
           "sass-loader",
         ],
-      }
+      },
     ],
   },
 };
